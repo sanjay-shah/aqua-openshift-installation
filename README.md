@@ -9,6 +9,14 @@
 If you're using [crc](https://developers.redhat.com/products/codeready-containers/download/) for local development, you need to provsion local storage or PersistentVolume for aqua-db and aqua-web.
 Follow this [link](https://github.com/code-ready/crc/wiki/Dynamic-volume-provisioning) to create local storage on crc
 
+## Login to the OpenShift Cluster
+
+`oc login -u kubeadmin -p <password> https://api.crc.testing:6443`
+
+## Create Aqua project
+
+`oc new-project aqua`
+
 ## Aqua serviceaccount privilaged access
 Before aqua is installed, aqua-sa service account need to be added to the privlaged user group on your cluster. This is needed becasue aqua needs privilaged access to cluster resource. Run the `oc` command below to add aqua-sa serviceaccoiunt in aqua namespace to privilaged access user group.
 
