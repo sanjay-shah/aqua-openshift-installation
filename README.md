@@ -25,4 +25,16 @@ Run the following command to install aqua.
 
 `./aquactl deploy csp`
 
-Select Red Hat OpenShift as Platform.
+Select Red Hat OpenShift as Platform and complete installation.
+
+## Create Route
+
+After `aquactl` installation can been completed sucessfully, create route using [server-route.yaml] (./server-route.yaml) file.
+```
+git clone https://github.com/sanjay-shah/aqua-openshift-installation.git
+cd aqua-openshift-installation
+oc apply -f server-route.yaml
+```
+Or
+`kubectl apply -f server-route.yaml`
+
