@@ -46,6 +46,6 @@ After `aquactl` installation completes sucessfully, create route using [server-r
 ## Access Aqua Web UI
 
 On local crc https://aqua-web.apps-crc.testing \
-On server [hostname provided in your route](https://github.com/sanjay-shah/aqua-openshift-installation/blob/475417ab053bf55af7e7cdad85e39692fc803890/server-route.yaml#L8)
+On server [hostname](https://github.com/sanjay-shah/aqua-openshift-installation/blob/475417ab053bf55af7e7cdad85e39692fc803890/server-route.yaml#L8) provided in your route.
 
 
