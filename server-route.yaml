@@ -1,0 +1,16 @@
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: aqua-web-route
+  namespace: aqua
+spec:
+  host: aqua-web.apps-crc.testing
+  to:
+    kind: Service
+    name: aqua-web
+  port:
+    targetPort: aqua-web
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Allow
