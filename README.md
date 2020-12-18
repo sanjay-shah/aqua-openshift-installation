@@ -27,7 +27,7 @@ Run the following command to install aqua.
 
 Select Red Hat OpenShift as Platform and complete installation.
 
-## Create Route
+## Create Route for aqua-web UI and API
 
 After `aquactl` installation completes sucessfully, create route using [server-route.yaml](server-route.yaml) file.
 ```
