@@ -1,6 +1,6 @@
 # Aqua Security OpenShift Installation Steps
 
-## Install OpenShift CLI
+## Install OpenShift-CLI(oc)
 
 `brew install openshift-cli`
 
@@ -10,7 +10,7 @@ If you're using [crc](https://developers.redhat.com/products/codeready-container
 Follow this [link](https://github.com/code-ready/crc/wiki/Dynamic-volume-provisioning) to create local storage on crc
 
 ## Aqua serviceaccount privilaged access
-Before aqua is installed, aqua-sa service account need to be added to the privlaged user group on your cluster. This is needed becasue aqua needs privilaged access to cluster resource. Run the oc command below to add aqua-sa serviceaccoiunt in aqua namespace to privilaged access user group.
+Before aqua is installed, aqua-sa service account need to be added to the privlaged user group on your cluster. This is needed becasue aqua needs privilaged access to cluster resource. Run the `oc` command below to add aqua-sa serviceaccoiunt in aqua namespace to privilaged access user group.
 
 `oc adm policy add-scc-to-user privileged -z aqua-sa -n aqua`
 
