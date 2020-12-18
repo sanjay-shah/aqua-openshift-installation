@@ -1,10 +1,13 @@
 # Aqua Security OpenShift Installation Steps
 
+## Install OpenShift CLI
 
-## Storage Class(sc) and Persitent Volume(pv)
+`brew install openshift-cli`
 
-Aqua requires sc and pv for aqua-db and aqua-web
-Follow this [link](https://github.com/code-ready/crc/wiki/Dynamic-volume-provisioning) to create local storage on your local OpenShift development environment or crc vm.
+## Storage Class(sc) and Persitent Volume(pv) - Optional
+
+If you're using [crc](https://developers.redhat.com/products/codeready-containers/download/) for local development, you need to provsion local storage or PersistentVolume for aqua-db and aqua-web.
+Follow this [link](https://github.com/code-ready/crc/wiki/Dynamic-volume-provisioning) to create local storage on crc
 
 ## Aqua serviceaccount privilaged access
 Before aqua is installed, aqua-sa service account need to be added to the privlaged user group on your cluster. This is needed becasue aqua needs privilaged access to cluster resource. Run the oc command below to add aqua-sa serviceaccoiunt in aqua namespace to privilaged access user group.
