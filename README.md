@@ -29,7 +29,7 @@ Select Red Hat OpenShift as Platform and complete installation.
 
 ## Create Route
 
-After `aquactl` installation can been completed sucessfully, create route using [server-route.yaml] (server-route.yaml) file.
+After `aquactl` installation can been completed sucessfully, create route using [server-route.yaml](server-route.yaml) file.
 ```
 git clone https://github.com/sanjay-shah/aqua-openshift-installation.git
 cd aqua-openshift-installation
