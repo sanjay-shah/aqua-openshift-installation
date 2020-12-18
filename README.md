@@ -18,8 +18,8 @@ Before aqua is installed, aqua-sa service account need to be added to the privla
 
 Download the Aquactl binary from the appropriate link:
 
-Linux: https://get.aquasec.com/aquactl/stable/aquactl\
-MacOS: https://get.aquasec.com/aquactl/mac/stable/aquactl
+Linux: https://get.aquasec.com/aquactl/stable/aquactl \
+MacOS: https://get.aquasec.com/aquactl/mac/stable/aquactl \
     
 Run the following command to install aqua. 
 
@@ -29,7 +29,7 @@ Select Red Hat OpenShift as Platform and complete installation.
 
 ## Create Route
 
-After `aquactl` installation can been completed sucessfully, create route using [server-route.yaml](server-route.yaml) file.
+After `aquactl` installation completes sucessfully, create route using [server-route.yaml](server-route.yaml) file.
 ```
 git clone https://github.com/sanjay-shah/aqua-openshift-installation.git
 cd aqua-openshift-installation
