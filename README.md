@@ -35,3 +35,8 @@ After `aquactl` installation completes sucessfully, create route using [server-r
 \
 `kubectl apply -f https://raw.githubusercontent.com/sanjay-shah/aqua-openshift-installation/main/server-route.yaml`
 
+## Access Aqua Web UI
+
+https://aqua-web.apps-crc.testing/
+
+
