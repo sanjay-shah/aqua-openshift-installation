@@ -14,9 +14,9 @@ Before aqua is installed, aqua-sa service account need to be added to the privla
 
 `oc adm policy add-scc-to-user privileged -z aqua-sa -n aqua`
 
-## Install aqua with aquactl
+## Install Aqua with aquactl
 
-Download the Aquactl binary from the appropriate link:
+Download the `aquactl` binary from the appropriate link:
 
 Linux: https://get.aquasec.com/aquactl/stable/aquactl \
 MacOS: https://get.aquasec.com/aquactl/mac/stable/aquactl
