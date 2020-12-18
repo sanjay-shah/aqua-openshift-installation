@@ -34,6 +34,8 @@ After `aquactl` installation completes sucessfully, create route using [server-r
 git clone https://github.com/sanjay-shah/aqua-openshift-installation.git
 cd aqua-openshift-installation
 ```
-oc: `oc apply -f server-route.yaml`\
-kubectl: `kubectl apply -f server-route.yaml`
+
+oc: `oc apply -f https://raw.githubusercontent.com/sanjay-shah/aqua-openshift-installation/main/server-route.yaml`\
+Or \
+kubectl: `kubectl apply -f https://raw.githubusercontent.com/sanjay-shah/aqua-openshift-installation/main/server-route.yaml`
 
