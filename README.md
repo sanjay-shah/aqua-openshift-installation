@@ -29,13 +29,9 @@ Select Red Hat OpenShift as Platform and complete installation.
 
 ## Create Route for aqua-web UI and API
 
-After `aquactl` installation completes sucessfully, create route using [server-route.yaml](server-route.yaml) file.
-```
-git clone https://github.com/sanjay-shah/aqua-openshift-installation.git
-cd aqua-openshift-installation
-```
+After `aquactl` installation completes sucessfully, create route using [server-route.yaml](server-route.yaml) file by running either of the command.
 
 oc: `oc apply -f https://raw.githubusercontent.com/sanjay-shah/aqua-openshift-installation/main/server-route.yaml`\
-Or \
+or \
 kubectl: `kubectl apply -f https://raw.githubusercontent.com/sanjay-shah/aqua-openshift-installation/main/server-route.yaml`
 
