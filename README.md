@@ -20,14 +20,16 @@ Follow this [link](https://github.com/code-ready/crc/wiki/Dynamic-volume-provisi
 ## Aqua serviceaccount privilaged access
 Before aqua is installed, aqua-sa service account need to be added to the privlaged user group on your cluster. This is needed becasue aqua needs privilaged access to cluster resource. Run the `oc` command below to add aqua-sa serviceaccoiunt in aqua namespace to privilaged access user group.
 
-`oc adm policy add-scc-to-user privileged -z aqua-sa -n aqua`
+`oc adm policy add-scc-to-user privileged -z aqua-sa -n aqua` This step may not be needed for aquactl2
 
 ## Install Aqua with aquactl
 
-Download `aquactl` binary from the appropriate link:
+Download `aquactl v2` binary from the appropriate link:
 
-Linux: https://get.aquasec.com/aquactl/stable/aquactl \
-MacOS: https://get.aquasec.com/aquactl/mac/stable/aquactl
+Note: OpenShift issues have been fixed in `aquactl` v2
+
+Linux: https://get.aquasec.com/aquactl/v2/aquactl \
+MacOS: https://get.aquasec.com/aquactl/mac/v2/aquactl
     
 Run the following command to install aqua. 
 
